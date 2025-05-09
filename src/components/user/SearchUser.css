@@ -1,0 +1,79 @@
+/* SearchEvent.css */
+
+.search-event-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-results {
+  list-style: none;
+  padding: 0;
+}
+
+.search-result-item {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Reserve space for the loading bar with a fixed height */
+.loading-box {
+  width: 100%;
+  height: 10px; /* Reserve space for the loading bar */
+  margin-bottom: 10px; /* Add some space below it */
+  position: relative; /* Position relative to its container */
+}
+
+.loading-box .MuiBox-root {
+  width: 100%;
+}
+
+.loading-box .MuiLinearProgress-root {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.loading-box .MuiLinearProgress-bar {
+  background-color: #007bff;
+}
+
+/* Control visibility of the loading bar without affecting layout */
+.loading-box.hidden {
+  visibility: hidden;
+}

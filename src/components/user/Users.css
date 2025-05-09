@@ -1,0 +1,87 @@
+.users-container {
+    margin: 20px;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+}
+
+.user-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.user-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    flex-grow: 1;
+    color: inherit;        /* Makes the link take the color of surrounding text */
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold;     /* Example: Makes the text bold */
+    cursor: pointer;       /* Adds a pointer cursor */
+}
+
+
+.toggle-details-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.user-email {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+.user-bio {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.user-details {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #444;
+}
+
+.user-avatar {
+    width: 50px;  /* Adjust the size as needed */
+    height: 50px; /* Same as width to maintain square shape */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 15px; /* Adds spacing between the avatar and the username */
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+
+
+.user-main-info {
+    display: flex;
+    align-items: center; /* Align the avatar and text vertically */
+}
+
+.user-name {
+    margin: 0;
+}

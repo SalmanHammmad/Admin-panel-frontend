@@ -1,0 +1,30 @@
+/* src/components/event/CreateEvent.css */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form fields */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the form */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    max-width: 600px;
+    margin: 0 auto; /* Center the form */
+  }
+  
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button[type='submit'] {
+ 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    
+  }
+  
+ 

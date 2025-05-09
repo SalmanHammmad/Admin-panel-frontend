@@ -1,0 +1,90 @@
+.user-profile-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.user-profile-header {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.avatar-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-avatar {
+    border: 3px solid #f0f0f0;
+}
+
+.profile-info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.user-category {
+    color: #757575;
+    margin-bottom: 5px;
+}
+
+.user-location {
+    color: #757575;
+}
+
+.user-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating-count {
+    margin-left: 10px;
+    color: #757575;
+}
+
+.user-profile-bio {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.user-bio {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.user-experience {
+    color: #757575;
+}
+
+.user-reviews {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.review-item {
+    margin-bottom: 10px;
+    border-left: 3px solid #2196F3;
+    padding-left: 10px;
+}
+
+.user-profile-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.user-profile-actions .MuiButton-root {
+    width: 48%;
+}
