@@ -36,6 +36,8 @@ const AdminLayout = ({ children }) => {
     }
   };
 
+  
+
   const handleLogin = () => navigate('/login');
   const handleRegister = () => navigate('/register');
 
@@ -161,7 +163,7 @@ const AdminLayout = ({ children }) => {
           )}
          {user && (
             <ListItem disablePadding>
-              <ListItemButton component={Link} to="/Marquees">
+              <ListItemButton component={Link} to="/marquees">
                 <ListItemIcon>
                   <UserIcon />
                 </ListItemIcon>

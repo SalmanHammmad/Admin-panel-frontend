@@ -1,19 +1,38 @@
-// apiUtils.js
-export const apiRequest = async (url, method = 'GET', body = null) => {
-    const options = {
-        method,
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        credentials: 'include',
-        body: body ? JSON.stringify(body) : null,
+import axios from "axios";
+
+export const apiRequest = async (url, method = "GET", data = null, headers = {}) => {
+  try {
+ 
+    const normalizedUrl = url.startsWith("/") ? url : `${url}`;
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+    const fullUrl = `${normalizedUrl}`;
+    console.log(`apiRequest: Constructed URL: ${fullUrl}`);
+
+    const config = {
+      method,
+      url: fullUrl,
+      headers: {
+        "Content-Type": "application/json",
+        ...headers,
+      },
+      ...(data ? { data } : {}),
+      withCredentials: true, // Send cookies (e.g., token)
     };
-    const response = await fetch(url, options);
-    console.log(response)
-    if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    return await response.json();
+
+    console.log(`apiRequest: Sending ${method} request to ${fullUrl}`, {
+      headers: config.headers,
+      data,
+    });
+
+    const response = await axios(config);
+    return response.data;
+  } catch (error) {
+    console.error("apiRequest Error:", {
+      message: error.message,
+      response: error.response?.data,
+      status: error.response?.status,
+      headers: error.response?.headers,
+    });
+    throw error;
+  }
 };
-
-

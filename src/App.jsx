@@ -47,6 +47,8 @@ function App() {
         <Route path="/marquees/update/:marqueeId" element={<UpdateScreenE />} />
         <Route path="/marquees/:marqueeId" element={<AdminLayout><Marquees /></AdminLayout>} />
 
+       
+
         <Route path="/services/*" element={<AdminLayout><ServiceManager /></AdminLayout>} />
         <Route path="/services/update/:serviceId" element={<UpdateScreenU />} />
         <Route path="/services/:serviceId" element={<AdminLayout><ServiceManager /></AdminLayout>} />

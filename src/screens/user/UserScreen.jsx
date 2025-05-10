@@ -35,17 +35,14 @@ const UserScreen = () => {
     return (
         <div className="user-manager-container">
          
-            <DummyData onUserCreated={handleRefresh}/>
+            
             
             <Routes>
                 <Route
                     path="/"
                     element={
                  <>
-                    <section className="user-manager-section">
-                        <h2>Create User</h2>
-                        <CreateUser onUserCreated={handleRefresh} />
-                    </section>
+                    
 
                     <hr className="divider" />
 
